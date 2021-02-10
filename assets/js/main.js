@@ -42,7 +42,7 @@ let result = document.getElementById("result");
 function berechnen() {
   let sum = Number(num1.value) + Number(num2.value);
   if (num1.value === num2.value) {
-    sum = sum * 5;
+    sum = (Number(num1.value) + Number(num2.value)) * 5;
   }
   result.innerHTML = sum;
 }
