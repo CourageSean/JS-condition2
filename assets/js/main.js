@@ -16,12 +16,16 @@ function weather() {
   current.innerHTML = weather1.value;
   if (weather1.value >= 0 && weather1.value <= 3) {
     txt2.innerHTML = "Bad";
+    txt2.style.color = "red";
   } else if (weather1.value > 3 && weather1.value <= 5) {
     txt2.innerHTML = "Okay";
+    txt2.style.color = "orange";
   } else if (weather1.value > 5 && weather1.value <= 7) {
     txt2.innerHTML = "Good";
+    txt2.style.color = "lightgreen";
   } else {
     txt2.innerHTML = "Super";
+    txt2.style.color = "green";
   }
 }
 
